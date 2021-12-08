@@ -1,0 +1,15 @@
+html,body {padding: 0; margin: 0; height: 100%; width: 100%; background-image: url(yachtsailing.webp); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; scrollbar-width: thin;}
+h1,h2,h3,p {font-weight: 400; font-family: Verdana, sans-serif; color: #f1f1f1}
+a {color: #ccddff; text-decoration: none; font-family: Verdana, sans-serif;}
+.header {background-color: #1f1f1f; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: center; top: 0; position: fixed;} 
+.header > a {padding: 5px; margin: 8px; font-size: 14px;}
+.welcome {text-align: center; padding: 20vh 0;}
+.welcome > h1 {color: #1f1f1f; font-size: 36px;}
+.intro {margin-left: 5vw; margin-right: 5vw; background-color: #1f1f1f; padding: 18px 24px 24px 18px; margin-bottom: 5vw;}
+.intro > h2 {text-align: center; margin: 0; padding: 0;}
+.footer {background-color: #1f1f1f; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: center; bottom: 0;} 
+.footer > p {color: #eeeeee;font-size: 14px;}
+::selection {background-color: #ccddff; color: #1f1f1f;}
+@media screen and (orientation:landscape){
+  html,body {background-image: url(scenery.webp);}
+}
