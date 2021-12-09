@@ -1,15 +1,32 @@
-html,body {padding: 0; margin: 0; height: 100%; width: 100%; background-image: url(yachtsailing.webp); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; scrollbar-width: thin;}
-h1,h2,h3,p {font-weight: 400; font-family: Verdana, sans-serif; color: #f1f1f1}
+html,body {padding: 0; margin: 0; height: 100%; width: 100%; background-image: url(portrait.webp); background-position: center center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; scrollbar-width: thin; scroll-behavior: smooth;}
+h1,h2,h3,p,li {font-weight: 400; font-family: Verdana, sans-serif; color: #f1f1f1}
 a {color: #ccddff; text-decoration: none; font-family: Verdana, sans-serif;}
-.header {background-color: #1f1f1f; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: center; top: 0; position: fixed;} 
-.header > a {padding: 5px; margin: 8px; font-size: 14px;}
-.welcome {text-align: center; padding: 20vh 0;}
-.welcome > h1 {color: #1f1f1f; font-size: 36px;}
-.intro {margin-left: 5vw; margin-right: 5vw; background-color: #1f1f1f; padding: 18px 24px 24px 18px; margin-bottom: 5vw;}
-.intro > h2 {text-align: center; margin: 0; padding: 0;}
-.footer {background-color: #1f1f1f; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: center; bottom: 0;} 
-.footer > p {color: #eeeeee;font-size: 14px;}
+nav {padding: 12px; background-color: rgba(0,0,0,0.75); display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;} 
+nav > a, .larray > a {margin: 0 8px; font-size: 14px;}
+.title {text-align: center; padding: 25vh 0;}
+.title > h1 {color: #f1f1f1; font-size: 36px; background-color: rgba(0,0,0,0.5); width: 360px; margin: 0 auto;}
+.content {margin-left: 12px; margin-right: 12px; background-color: rgba(0,0,0,0.75); padding: 18px 24px 24px 18px; margin-bottom: 5vw;}
+.content > div {margin: 12px 0;}
+.content > div > h2 {text-align: center; margin: 0; padding: 0; margin: 12px 0;}
+.content > div > div {display: flex; flex-direction: column; align-items: flex-start; margin: 12px 0;}
+.content > div > div > img {width: 240px; margin: 0 auto;}
+.content p {font-size: 14px;}
+footer {background-color: rgba(0,0,0,0.75); width: 100%; display: flex; justify-content: center; align-items: center; bottom: 0;} 
+footer > p {color: #eeeeee;font-size: 14px; margin: 12px;}
+.map {max-width: 240px; margin: 0 auto; display: block;}
+.matl {margin: 12px; text-align: center; font-size: 14px;}
 ::selection {background-color: #ccddff; color: #1f1f1f;}
+::-moz-selection {background-color: #ccddff; color: #1f1f1f;}
 @media screen and (orientation:landscape){
-  html,body {background-image: url(scenery.webp);}
+  html,body {background-image: url(landscape.webp);}
+}
+@media screen and (min-width: 641px) {
+  .content > div > div {flex-direction: column;}
+  .content > div > div > img {width: 360px;}
+  .map {max-width: 480px;}
+}
+@media screen and (min-width: 961px) {
+  .content > div > div {flex-direction: row;}
+  .content > div > div > img {margin:0; margin-right: 24px; width: 480px; left: 0;}
+  .map {max-width: 720px;}
 }
